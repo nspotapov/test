@@ -61,6 +61,8 @@ async def get_timetable_img(request: Request, group: str = "ПИбд-21", versio
 
     tt.timetable_bells = tb
 
-    tt.set_period(datetime.date(2023, 7, 31), datetime.date(2023, 8, 6))
+    # tt.set_period(datetime.date(2023, 7, 31), datetime.date(2023, 8, 6))
+
+    tt.set_period()
 
     return templates.TemplateResponse("template.html", {"request": request, "tt": tt})

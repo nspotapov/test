@@ -8,13 +8,14 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="/static/template.css">
-	<title>Document</title>
+	<link rel="shortcut icon" href="/static/img/favicon.svg" type="image/svg+xml">
+	<title>Расписание УлГТУ</title>
 </head>
 
 <body>
 	<header>
 		<div class="title-group-name">
-			Расписание группы: <b>{{ tt.group }}</b>
+			Расписание группы: <b class="alternative-color">{{ tt.group }}</b>
 		</div>
 		<div class="title-promo">
 			<a class="promo-link" href="http://t.me/ulstutimebot">
@@ -28,15 +29,15 @@
 		</div>
 		<div class="title-week-meta">
 			<div class="week-meta-group">
-				<b>{{ tt.group }}</b>
+				<b class="alternative-color">{{ tt.group }}</b>
 			</div>
 			{% if tt.get_period() %}
 			<div class="week-meta-dates">
-				<b>{{ tt.get_period() }}</b>
+				<b class="alternative-color">{{ tt.get_period() }}</b>
 			</div>
 			{% endif %}
 			<div class="week-meta-number">
-				Неделя: <b>{{ tt.number }}</b>
+				Неделя: <b class="alternative-color">{{ tt.number }}</b>
 			</div>
 		</div>
 	</header>
@@ -64,7 +65,10 @@
 				{% for day in tt.days %}
 				<tr class="day">
 					<th class="table-header table-header-left">
-						{{ day.weekday }}<br>{{ day.get_date() }}
+						{{ day.weekday }}
+						{% if day.get_date() %}
+						<br>{{ day.get_date() }}
+						{% endif %}
 					</th>
 					{% for pair in day.pairs %}
 					<td class="pair">

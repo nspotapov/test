@@ -1,0 +1,38 @@
+<svg width="260" height="260" viewBox="0 0 260 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5 23.3333H255H5ZM260 245C260 253.284 253.284 260 245 260H15C6.71573 260 0 253.284 0 245H10C10 247.761 12.2386 250 15 250H245C247.761 250 250 247.761 250 245H260ZM15 260C6.71573 260 0 253.284 0 245V38.3333C0 30.0491 6.71573 23.3333 15 23.3333C12.2386 23.3333 10 27.8105 10 33.3333V245C10 247.761 12.2386 250 15 250V260ZM245 23.3333C253.284 23.3333 260 30.0491 260 38.3333V245C260 253.284 253.284 260 245 260V250C247.761 250 250 247.761 250 245V33.3333C250 27.8105 247.761 23.3333 245 23.3333Z" fill="black"/>
+<path d="M218.333 18.3333H245C253.284 18.3333 260 25.0491 260 33.3333H250C250 30.5719 247.761 28.3333 245 28.3333H218.333V18.3333ZM260 45C260 53.2843 253.284 60 245 60H218.333V50H245C247.761 50 250 47.7614 250 45H260ZM218.333 55V23.3333V55ZM245 18.3333C253.284 18.3333 260 25.0491 260 33.3333V45C260 53.2843 253.284 60 245 60V50C247.761 50 250 47.7614 250 45V33.3333C250 30.5719 247.761 28.3333 245 28.3333V18.3333Z" fill="black"/>
+<path d="M68.3333 18.3333H191.667V28.3333H68.3333V18.3333ZM191.667 55H68.3333H191.667ZM68.3333 55V23.3333V55ZM191.667 23.3333V55V23.3333Z" fill="black"/>
+<path d="M0 33.3333C0 25.0491 6.71573 18.3333 15 18.3333H41.6667V28.3333H15C12.2386 28.3333 10 30.5719 10 33.3333H0ZM41.6667 60H15C6.71573 60 0 53.2843 0 45H10C10 47.7614 12.2386 50 15 50H41.6667V60ZM15 60C6.71573 60 0 53.2843 0 45V33.3333C0 25.0491 6.71573 18.3333 15 18.3333V28.3333C12.2386 28.3333 10 30.5719 10 33.3333V45C10 47.7614 12.2386 50 15 50V60ZM41.6667 23.3333V55V23.3333Z" fill="black"/>
+<style>
+    rect {
+      stroke: black;
+    }
+	path {
+		fill: black;
+	}
+    @media (prefers-color-scheme: dark) {
+      rect {
+        stroke: white;
+      }
+	  path {
+		fill: white;
+	}
+    }
+  </style>
+<rect x="191.667" y="5" width="26.6667" height="35" rx="10" stroke="black" stroke-width="10"/>
+<rect x="41.6667" y="5" width="26.6667" height="35" rx="10" stroke="black" stroke-width="10"/>
+<rect x="5" y="55" width="250" height="200" rx="10" stroke="black" stroke-width="10"/>
+<rect x="30" y="80" width="200" height="150" rx="5" stroke="black" stroke-width="5"/>
+<rect x="30" y="180" width="50" height="50" rx="5" stroke="black" stroke-width="5"/>
+<rect x="180" y="80" width="50" height="50" rx="5" stroke="black" stroke-width="5"/>
+<rect x="180" y="130" width="50" height="50" rx="5" stroke="black" stroke-width="5"/>
+<rect x="180" y="180" width="50" height="50" rx="5" stroke="black" stroke-width="5"/>
+<rect x="130" y="80" width="50" height="50" rx="5" stroke="black" stroke-width="5"/>
+<rect x="130" y="130" width="50" height="50" rx="5" stroke="black" stroke-width="5"/>
+<rect x="130" y="180" width="50" height="50" rx="5" stroke="black" stroke-width="5"/>
+<rect x="80" y="80" width="50" height="50" rx="5" stroke="black" stroke-width="5"/>
+<rect x="80" y="130" width="50" height="50" rx="5" stroke="black" stroke-width="5"/>
+<rect x="80" y="180" width="50" height="50" rx="5" stroke="black" stroke-width="5"/>
+<rect x="30" y="80" width="50" height="50" rx="5" stroke="black" stroke-width="5"/>
+<rect x="30" y="130" width="50" height="50" rx="5" stroke="black" stroke-width="5"/>
+</svg>
