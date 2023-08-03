@@ -1,0 +1,255 @@
+:root {
+	--color-gray: #033A4F;
+	--color-light-blue: #49AED7;
+	--color-blue: #0896CF;
+	--color-dark-gray: #1B404F;
+	--color-dark-blue: #06719C;
+}
+
+html,
+body {
+	font-family: 'Golos Text', sans-serif;
+}
+
+body {
+	margin-top: 0;
+	position: relative;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:link,
+a:visited {
+	color: black;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	background-color: white;
+	z-index: 10;
+
+	font-size: 30px;
+
+	padding-bottom: 10px;
+
+	position: sticky;
+	top: 0;
+	padding-top: 8px;
+}
+
+.week-meta-group {
+	display: none;
+}
+
+.title-week-meta {
+	display: flex;
+}
+
+.title-week-meta .week-meta-dates {
+	margin-right: 20px;
+}
+
+.title-promo {
+	display: flex;
+	align-items: center;
+}
+
+.promo-link {
+	display: flex;
+	align-items: baseline;
+}
+
+.promo-link-main {
+	margin: 0px 20px;
+}
+
+.title-promo-img {
+	height: 30px;
+}
+
+main {
+	width: 100%;
+}
+
+table {
+	width: 100%;
+	border-collapse: separate;
+	border-spacing: 0;
+
+	position: relative;
+
+	z-index: 2;
+}
+
+.table-header {
+	text-align: center;
+	vertical-align: middle;
+}
+
+table td,
+th {
+	border-bottom: solid;
+	border-right: solid;
+
+	table-layout: fixed;
+}
+
+table th {
+	font-weight: normal;
+}
+
+.table-header-left {
+	min-width: 50px;
+	position: sticky;
+	left: 0;
+	background-color: white;
+}
+
+thead {
+	position: sticky;
+	top: 54px;
+	background-color: white;
+	z-index: 2;
+}
+
+.table-header-top {
+	/* width: 150px; */
+}
+
+tbody tr td {
+	min-width: 150px;
+}
+
+.table-header-left {
+	border-left: solid;
+	width: 65px;
+}
+
+.day .table-header-left {
+	padding: 10px 0;
+}
+
+tr:first-of-type th {
+	border-top: solid;
+}
+
+tr td:nth-child(2) {
+	border-left: none;
+}
+
+tbody {
+	z-index: 1;
+}
+
+tbody tr:first-child td {
+	border-top: none;
+}
+
+tbody tr:first-child th {
+	border-top: none;
+}
+
+.pair {
+	text-align: center;
+	padding: 0 10px;
+}
+
+.lesson {
+	white-space: pre-wrap;
+	margin-bottom: 10px;
+}
+
+.pair .lesson:first-child {
+	margin-top: 10px;
+}
+
+
+@media (max-width: 576px) {
+
+	html,
+	body {
+		height: 100%;
+	}
+
+	thead {
+		top: 0;
+	}
+
+	table {
+		/* height: 150vh; */
+		height: 100%;
+	}
+
+	body {
+		margin: 5px 0;
+		overflow: auto;
+	}
+
+	main {
+		width: 100%;
+		height: 100%;
+		overflow: auto;
+	}
+
+	header {
+		flex-direction: column;
+		font-size: 4.5vw;
+		padding-bottom: 5px;
+		margin: 0 10px;
+		padding-top: 0;
+	}
+
+	.week-meta-group {
+		display: block;
+	}
+
+	.title-group-name {
+		display: none;
+	}
+
+	.title-week-meta {
+		justify-content: space-between;
+		width: 100%;
+		margin-top: 5px;
+	}
+
+	.week-meta-dates {
+		margin: 0 !important;
+	}
+}
+
+
+@media (max-width: 768px) {
+	header {
+		font-size: 14px;
+	}
+}
+
+@media (max-width: 992px) {
+	header {
+		font-size: 14px;
+	}
+}
+
+@media (max-width: 1200px) {
+	header {
+		font-size: 14px;
+	}
+}
+
+@media (max-width: 1400px) {
+	header {
+		font-size: 14px;
+	}
+}
+
+@media (min-width: 1400px) {
+	header {
+		font-size: 14px;
+	}
+}

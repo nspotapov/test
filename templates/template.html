@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="widtd=device-widtd, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="/static/template.css">
+	<title>Document</title>
+</head>
+
+<body>
+	<header>
+		<div class="title-group-name">
+			Расписание группы: <b>{{ tt.group }}</b>
+		</div>
+		<div class="title-promo">
+			<a class="promo-link" href="http://t.me/ulstutimebot">
+				<img class="title-promo-img" src="/static/img/TG_old.png">
+			</a>
+			<a class="promo-link promo-link-main" target="_blank"
+				href="http://ulstutimebot.nspotapov.ru">ulstutimebot</a>
+			<a class="promo-link" href="https://vk.com/ulstutimebot">
+				<img class="title-promo-img" src="/static/img/VK_Compact_Logo.svg">
+			</a>
+		</div>
+		<div class="title-week-meta">
+			<div class="week-meta-group">
+				<b>{{ tt.group }}</b>
+			</div>
+			{% if tt.get_period() %}
+			<div class="week-meta-dates">
+				<b>{{ tt.get_period() }}</b>
+			</div>
+			{% endif %}
+			<div class="week-meta-number">
+				Неделя: <b>{{ tt.number }}</b>
+			</div>
+		</div>
+	</header>
+	<main>
+		<table>
+			<thead>
+				<tr>
+					<th class="table-header table-header-top table-header-left">Пара</th>
+					{% for bell in tt.timetable_bells %}
+					<th class="table-header table-header-top">
+						{{ loop.index }}
+					</th>
+					{% endfor %}
+				</tr>
+				<tr>
+					<th class="table-header table-header-top table-header-left">Время</th>
+					{% for bell in tt.timetable_bells %}
+					<th class="table-header table-header-top">
+						{{ bell.get_str() }}
+					</th>
+					{% endfor %}
+				</tr>
+			</thead>
+			<tbody>
+				{% for day in tt.days %}
+				<tr class="day">
+					<th class="table-header table-header-left">
+						{{ day.weekday }}<br>{{ day.get_date() }}
+					</th>
+					{% for pair in day.pairs %}
+					<td class="pair">
+						{% for lesson in pair.lessons %}
+						<div class="lesson">{{ lesson }}</div>
+						{% endfor %}
+					</td>
+					{% endfor %}
+				</tr>
+				{% endfor %}
+			</tbody>
+
+		</table>
+	</main>
+</body>
+
+</html>
